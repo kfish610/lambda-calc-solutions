@@ -1,0 +1,24 @@
+# Values
+0  := \fx. x
+1  := \fx. f x
+2  := \fx. f (f x)
+3  := \fx. f (f (f x))
+4  := \fx. f (f (f (f x)))
+5  := \fx. f (f (f (f (f x))))
+6  := \fx. f (f (f (f (f (f x)))))
+7  := \fx. f (f (f (f (f (f (f x))))))
+8  := \fx. f (f (f (f (f (f (f (f x)))))))
+9  := \fx. f (f (f (f (f (f (f (f (f x))))))))
+10 := \fx. f (f (f (f (f (f (f (f (f (f x)))))))))
+# ...
+
+# Functions
+SUCC := \n. \fx. f (n f x)
+
+# Write these yourself!
+PLUS := \mn.
+
+MULT := \mn.
+
+# Extra Credit: This one is pretty hard to figure out
+EXP  := \mn.

@@ -1,0 +1,11 @@
+%include './2-Boolean.lcs'
+%include './3-Numeral.lcs'
+
+# Hint hint
+CONST := \c. \x. c
+
+# Write these yourself!
+ISZERO := \n.
+
+# Hint: You're going to want to use SUB and ISZERO for this
+LEQ := λm.λn.
