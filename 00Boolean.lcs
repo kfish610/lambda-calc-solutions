@@ -1,0 +1,10 @@
+# Values
+TRUE  := \xy. x
+FALSE := \xy. y
+
+# Functions
+NOT := \p. p FALSE TRUE
+
+# Write these yourself!
+AND := \pq.
+OR  := \pq.
