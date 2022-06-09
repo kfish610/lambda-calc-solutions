@@ -1,0 +1,16 @@
+%include './2-Boolean.lcs'
+%include './3-Numeral.lcs'
+
+PAIR := \xy. \f. f x y
+
+FIRST  := \p. p TRUE
+SECOND := \p. p FALSE
+
+
+# Write these yourself!
+
+SHIFTEVAL := \fp.
+
+PRED := \n.
+
+SUB := \mn.

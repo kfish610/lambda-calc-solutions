@@ -1,11 +1,11 @@
-%include './2-Boolean.lcs'
-%include './3-Numeral.lcs'
+%include './4-Pair.lcs'
 
 # Hint hint
 CONST := \c. \x. c
 
 # Write these yourself!
+
 ISZERO := \n.
 
-# Hint: You're going to want to use SUB and ISZERO for this
-LEQ := λm.λn.
+# Hint: Think about what happens to SUB when m < n
+LEQ := \mn.
