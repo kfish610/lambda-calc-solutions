@@ -1,0 +1,5 @@
+%include '6-List.lcs'
+
+Y := \f. (\x. f (x x)) (\x. f (x x))
+
+MULT_REC := \rnm. ADD m (r (PRED n) m)
