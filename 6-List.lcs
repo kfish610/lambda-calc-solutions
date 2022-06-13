@@ -1,0 +1,18 @@
+%include './4-Pair.lcs'
+
+CONS := PAIR
+NIL  := \x. TRUE
+
+HEAD := FIRST
+TAIL := SECOND
+
+# If the list is a pair, this will always give FALSE
+# If the list is a NIL, NIL always returns TRUE
+NULL := \l. l (\xy. FALSE)
+
+
+# Write these yourself!
+
+INDEX := \nl.
+
+REPLICATE := \nx.
