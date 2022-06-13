@@ -1,5 +1,5 @@
-# %include '5-Predicate.lcs'
-# %include '6-List.lcs'
+%include '5-Predicate.lcs'
+%include '6-List.lcs'
 
 Y := \f. (\x. f (x x)) (\x. f (x x))
 
