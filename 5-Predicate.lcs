@@ -7,5 +7,5 @@ CONST := \c. \x. c
 
 ISZERO := \n.
 
-# Hint: Think about what happens to SUB when m < n
+# Hint: Think about what happens to SUB when m <= n
 LEQ := \mn.
