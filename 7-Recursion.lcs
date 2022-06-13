@@ -8,10 +8,10 @@ MULT_REC := \rnm. (ISZERO n) 0 (ADD m (r (PRED n) m))
 
 # Write these yourself!
 
-FACTORIAL := \n.
+FACTORIAL := \rn.
 
-REPEAT := \x.
+REPEAT := \rx.
 
-ITERATE := \fx.
+ITERATE := \rfx.
 
-MAP := \fl.
+MAP := \rfl.
