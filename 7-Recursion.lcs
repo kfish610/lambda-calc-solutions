@@ -1,5 +1,17 @@
-%include '6-List.lcs'
+# %include '5-Predicate.lcs'
+# %include '6-List.lcs'
 
 Y := \f. (\x. f (x x)) (\x. f (x x))
 
-MULT_REC := \rnm. ADD m (r (PRED n) m)
+MULT_REC := \rnm. (ISZERO n) 0 (ADD m (r (PRED n) m))
+
+
+# Write these yourself!
+
+FACTORIAL := \n.
+
+REPEAT := \x.
+
+ITERATE := \fx.
+
+MAP := \fl.
