@@ -10,9 +10,22 @@ TAIL := SECOND
 # If the list is a NIL, NIL always returns TRUE
 NULL := \l. l (\xy. FALSE)
 
+LIST1 := CONS 0 (CONS 0 NIL)
+
+LIST2 := CONS 1 (CONS 2 (CONS 3 NIL))
+
+HEAD LIST1
+
+HEAD (TAIL LIST2)
+
+HEAD (TAIL (TAIL LIST2))
 
 # Write these yourself!
 
-INDEX := \nl.
+INDEX := \nl. HEAD (n TAIL l)
 
-REPLICATE := \nx.
+INDEX 1 LIST1
+
+REPLICATE := \nx. n (CONS x) NIL
+
+REPLICATE 3 1

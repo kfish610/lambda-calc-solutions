@@ -8,10 +8,10 @@ MULT_REC := \rnm. (ISZERO n) 0 (ADD m (r (PRED n) m))
 
 # Write these yourself!
 
-FACTORIAL := \rn.
+FACTORIAL := \rn. (ISZERO n) 1 (MULT n (r (PRED n)))
 
-REPEAT := \rx.
+REPEAT := \rx. CONS x (r x)
 
-ITERATE := \rfx.
+ITERATE := \rfx. CONS x (r f (f x))
 
-MAP := \rfl.
+MAP := \rfl. (NULL l) NIL (CONS (f (HEAD l)) (r f (TAIL l)))

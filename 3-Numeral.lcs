@@ -16,8 +16,8 @@ SUCC := \n. \fx. f (n f x)
 
 # Write these yourself!
 
-ADD  := \mn.
-MULT := \mn.
+ADD  := \mn. \fx. m f (n f x)
+MULT := \mn. \fx. m (n f) x
 
 # Extra Credit: This one is pretty hard to figure out
-EXP  := \mn.
+EXP  := \mn. n m

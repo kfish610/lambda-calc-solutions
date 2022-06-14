@@ -6,7 +6,7 @@ CONST := \c. \x. c
 
 # Write these yourself!
 
-ISZERO := \n.
+ISZERO := \n. n (CONST FALSE) TRUE
 
 # Hint: Think about what happens to SUB when m <= n
-LEQ := \mn.
+LEQ := \mn. ISZERO (SUB m n)

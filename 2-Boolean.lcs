@@ -6,5 +6,5 @@ NOT := \p. p FALSE TRUE
 
 # Write these yourself!
 
-AND := \pq.
-OR  := \pq.
+AND := \pq. p q p
+OR  := \pq. p p q

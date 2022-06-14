@@ -9,8 +9,17 @@ SECOND := \p. p FALSE
 
 # Write these yourself!
 
-SHIFTEVAL := \fp.
+SHIFTEVAL := \fp. PAIR (SECOND p) (f (SECOND p))
 
-PRED := \n.
+SHIFTSUCC := SHIFTEVAL SUCC
+SHIFTNOT  := SHIFTEVAL NOT
 
-SUB := \mn.
+SHIFTSUCC (PAIR 0 0)
+
+SHIFTNOT (PAIR FALSE FALSE)
+
+PRED := \n. FIRST (n (SHIFTEVAL SUCC) (PAIR 0 0))
+
+SUB := \mn. n PRED m
+
+SUB 5 7
